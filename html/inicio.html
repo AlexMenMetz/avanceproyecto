@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COCENDI IPN</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="img/logo_equipo.png" />
+
+    <style>
+        header img {
+            height: 70px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="p-3"> 
+        <div class="container d-flex  justify-content-between"> 
+            <img src="img/ipn.jpg" alt="logoIpn">
+            <h4 class="p-3" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Coordinación de CENDI (COCENDI)</h4>
+            <img src="img/cocendi.jpg" alt="COCENDI">
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon" style="background:#5a0035;">
+        <div class="container">
+            <a class="navbar-brand" href="prueba.html">Inicio</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="inscripcion.html">Inscripción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acceso.html">Acceso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://www.ipn.mx/cocendi/conocenos/titular.html" target="_blank"><img src="img/noticia1.png" class="d-block w-100" style="width: 600px;"  alt="Noticia 1"></a>
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5>Noticia 1</h5>
+                    <p>Información del COCENDI IPN.</p>
+                </div>
+            </div>
+    
+            <div class="carousel-item">
+                <a href="https://www.ipn.mx/cocendi/conocenos/huerto.html" target="_blank"> <img src="img/noticia0.png" class="d-block w-100" style="width: 300px;" alt="Noticia 2"></a>
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5>Noticia 2</h5>
+                    <p>HUERTO COCENDI</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.ipn.mx/cocendi/conocenos/proteccion-civil.html" target="_blank"><img src="img/noticia2.png" class="d-block w-100" alt="Noticia 3"></a>
+                <div class="carousel-caption d-none d-md-block fondo-opaco bg-dark  bg-opacity-50 ">
+                     <h5>Noticia 3</h5>
+                     <p>Protección Civil</p>
+                </div>
+            </div>
+       
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <footer class="bg-light text-center py-3 mt-4 border-top">
+        <p class="m-0">© 2025 COCENDI - Derechos Reservados al Instituto Politécnico Nacional</p>
+    </footer>
+
+</body>
+</html>
