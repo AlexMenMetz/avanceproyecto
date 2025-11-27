@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inscripción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+          <script src="./js/FormsValid.js" defer></script>
+</head>
+<body>
+<div class="container py-4">
+    <h3 class="mb-3">Datos de la niña o del niño</h3>
+    <form id="formNino" novalidate>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="ap1Nino" class="form-label">Primer apellido</label>
+                <input type="text" class="form-control" id="ap1Nino" required>
+            </div>
+            <div class="col-md-4">
+                <label for="ap2Nino" class="form-label">Segundo apellido</label>
+                <input type="text" class="form-control" id="ap2Nino" required>
+            </div>
+            <div class="col-md-4">
+                <label for="nombreNino" class="form-label">Nombre(s)</label>
+                <input type="text" class="form-control" id="nombreNino" required>
+            </div>
+            <div class="col-md-4">
+                <label for="lugarNacimientoNino" class="form-label">Lugar de nacimiento</label>
+                <input type="text" class="form-control" id="lugarNacimientoNino" required>
+            </div>
+            <div class="col-md-4">
+                <label for="fechaNacNino" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="fechaNacNino" required>
+            </div>
+            <div class="col-md-4">
+                <label for="curpNino" class="form-label">CURP</label>
+                <input type="text" class="form-control" id="curpNino" maxlength="18" required>
+            </div>
+            <div class="col-md-3">
+                <label for="grupoSang" class="form-label">Grupo sanguíneo</label>
+                <select id="grupoSang" class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>O</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>AB</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="rh" class="form-label">Rh</label>
+                <select id="rh" class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>+</option>
+                    <option>-</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="domicilioNino" class="form-label">Domicilio</label>
+                <input type="text" class="form-control" id="domicilioNino" required>
+            </div>
+            <div class="col-md-4">
+                <label for="entidadNino" class="form-label">Entidad federativa</label>
+                <select id="entidadNino" class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>Ciudad de México</option>
+                    <option>Estado de México</option>
+                    <option>Hidalgo</option>
+                    <option>Morelos</option>
+                    <option>Puebla</option>                   
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="alcaldia" class="form-label">Alcaldía / Municipio</label>
+                <select id="alcaldia" class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>Álvaro Obregón</option>
+                    <option>Azcapotzalco</option>
+                    <option>Benito Juárez</option>
+                    <option>Coyoacán</option>
+                    <option>Cuauhtémoc</option>                
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="cpNino" class="form-label">Código postal</label>
+                <input type="text" class="form-control" id="cpNino" maxlength="5" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="telNino" class="form-label">Teléfono de contacto</label>
+                <input type="text" class="form-control" id="telNino" maxlength="10" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="grupo" class="form-label">Grupo</label>
+                <select id="grupo" class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>Lactantes I - II (0 - 12 meses)</option>
+                    <option>Maternal I (1 año 1 día – 2 años)</option>
+                    <option>Maternal II (2 años 1 día – 3 años)</option>
+                    <option>Preescolar I (3 años 1 día – 4 años)</option>
+                    <option>Preescolar II (4 años 1 día – 5 años)</option>
+                    <option>Preescolar III (5 años 1 día – 6 años)</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="cendi" class="form-label">CENDI</label>
+                <select id="cendi" class="form-select" required>
+                    <option value="">Seleccione...</option>
+                    <option>CENDI 1</option>
+                    <option>CENDI 2</option>
+                    <option>CENDI 3</option>
+                    <option>CENDI 4</option>
+                    <option>CENDI 5</option>
+                </select>
+            </div>
+        
+    <h3 class="mb-3">Datos del trabajador(a)</h3>
+ <div class="col-md-4">
+      <label for="Ap1T" class="form-label">Primer Apellido</label>
+      <input type="text" class="form-control" id="Ap1T" required>
+  </div>
+           <div class="col-md-4">
+            <label for="Ap2T" class="form-label">Segundo Apellido</label>
+              <input type="text" class="form-control" id="Ap2T" required>
+           </div> 
+           <div class="col-md-4">
+      <label for="NombreT" class="form-label">Nombre(s)</label>
+      <input type="text" class="form-control" id="NombreT" required>
+  </div>
+
+            <div class="col-md-4">
+                <label for="LugarNacT" class="form-label">Lugar de Nacimiento</label>
+    <select class="form-select" id="LugarNacT" required>
+      <option selected disabled value="">Selecciona...</option>
+        <option>Aguascalientes</option>
+        <option>Baja California</option>
+        <option>Baja California Sur</option>
+        <option>Campeche</option>
+        <option>Chiapas</option>
+        <option>Chihuahua</option>
+        <option>Ciudad de México</option>
+        <option>Coahuila</option>
+        <option>Colima</option>
+        <option>Durango</option>
+        <option>Guanajuato</option>
+        <option>Guerrero</option>
+        <option>Hidalgo</option>
+        <option>Jalisco</option>
+        <option>México</option>
+        <option>Michoacán</option>
+        <option>Morelos</option>
+        <option>Nayarit</option>
+        <option>Nuevo León</option>
+        <option>Oaxaca</option>
+        <option>Puebla</option>
+        <option>Querétaro</option>
+        <option>Quintana Roo</option>
+        <option>San Luis Potosí</option>
+        <option>Sinaloa</option>
+        <option>Sonora</option>
+        <option>Tabasco</option>
+        <option>Tamaulipas</option>
+        <option>Tlaxcala</option>
+        <option>Veracruz</option>
+        <option>Yucatán</option>
+        <option>Zacatecas</option>
+
+    </select>
+            </div>
+            <div class="col-md-4">
+                <label for="FechaNacT" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="FechaNacT" required>
+            </div>
+            <div class="col-md-4">
+                <label for="CURPTra" class="form-label">CURP</label>
+                <input type="text" class="form-control" id="CURPTra" maxlength="18" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="CorreoIPN" class="form-label">Correo institucional</label>
+                <input type="email" class="form-control" id="CorreoIPN" placeholder="usuario@ipn.mx" required>
+            </div>
+            <div class="col-md-6">
+                <label for="CorreoP" class="form-label">Correo personal</label>
+                <input type="email" class="form-control" id="CorreoP" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="EsCv" class="form-label">Estado civil</label>
+                <select id="EsCv" class="form-select" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option>Soltero(a)</option>
+                    <option>Casado(a)</option>
+                    <option>Unión libre</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="Ocup" class="form-label">Ocupación</label>
+                <select id="Ocup" class="form-select" required>
+                    <option value="">Selecciona...</option>
+                    <option>Docente</option>
+                    <option>PAAE</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                 <label for="NumTra" class="form-label">Numero de Empleado</label>
+    <input type="number" class="form-select" id="NumTra" maxlength="7" required>
+            </div>
+
+            <div class="col-md-4">
+               <label for="Escola" class="form-label">Escolaridad</label>
+    <select class="form-select" id="Escola" required>
+      <option selected disabled value="">Selecciona...</option>
+        <option>Tecnico Superior Universitario</option>
+        <option>Licenciatura</option>
+        <option>Posgrado</option>
+        <option>Maestria</option>
+        <option>Doctorado</option>
+    </select>
+            </div>
+
+            <div class="col-md-4">
+                <label for="Ads" class="form-label">Adscripción</label>
+    <select class="form-control" id="Ads" required>
+      <option selected disabled value="">Selecciona...</option>
+        <option>CECyT No.1 Gonzalo Vázquez Vela</option>
+      <option>CECyT No.2 Miguel Bernard</option>
+      <option>CECyT No.3 Estanislao Ramírez Ruiz</option>
+      <option>CECyT No.4 Lázaro Cárdenas</option>
+      <option>CECyT No.5 Benito Juárez</option>
+      <option>CECyT No.6 Miguel Othón de Mendizábal</option>
+      <option>CECyT No.7 Cuauhtémo c</option>
+      <option>CECyT No.8 Narciso Bassols</option>
+      <option>CECyT No.9 Juan de Dios Bátiz</option>
+      <option>CECyT No.10 Carlos Vallejo Márquez</option>
+      <option>CECyT No.11 Wilfrido Massieu</option>
+      <option>CECyT No.12 José María Morelos</option>
+      <option>CECyT No.13 Ricardo Flores Magón</option>
+      <option>CECyT No.14 Luis Enrique Erro</option>
+      <option>CECyT No.15 Diódoro Antúnez Echegaray</option>
+      <option>CECyT No.16 Hidalgo</option> 
+      <option>CECyT No.17 León, Guanajuato</option>
+      <option>CECyT No.18 Zacatecas</option>
+      <option>CECyT No.19 Leona Vicario</option>
+      <option>CECyT No.20 Natalia Serdán Alatriste</option>
+      <option>CET No.1 Walter Cross Buchanan</option>
+    </select>
+            </div>
+
+            <div class="col-md-4">
+               <label for="HorarioT" class="form-label">Horario de Trabajo</label>
+    <select class="form-select" id="HorarioT" required>
+      <option selected disabled value="">Selecciona...</option>
+        <option>7:00am-3:00pm</option>
+        <option>8:00am-4:00pm</option>
+        <option>9:00am-5:00pm</option>
+        <option>10:00am-6:00pm</option>
+        <option>11:00am-7:00pm</option>
+        <option>12:00am-8:00pm</option>
+        <option>1:00pm-9:00pm</option>
+    </select>
+            </div>
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="button" class="btn btn-secondary" id="btnLimpiar">Limpiar</button>
+
+        </div>
+        </div>
+    </form>
+
+    <div id="mensajeRegistro" class="mt-3"></div>
+</div>
+</body>
+</html>
