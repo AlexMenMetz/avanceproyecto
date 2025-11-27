@@ -15,7 +15,10 @@ header {
     font-weight: bold;
 }
 
+
 footer {
-    background-color: white;
-    border-top: 2px solid var(#5a0035);
+    background-color: #5a0035;
+    border-top: 2px solid #ffffff;
+    color: white; /* recomendable para que se vea el texto */
 }
+
