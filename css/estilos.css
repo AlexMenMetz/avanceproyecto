@@ -1,0 +1,22 @@
+
+.btn-primary {
+    background-color: #6C1D45; 
+    border-color: #6C1D45;    
+    color: #fff;             
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #4a132f; 
+    border-color: #4a132f;
+}
+
+.btn-secondary {
+    background-color: #ffffff; 
+    border-color: #424242;
+    color: #6b1b1b;
+    margin-left: 10px;     
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    background-color: #746565; 
+    border-color: #2c2121;
+}
